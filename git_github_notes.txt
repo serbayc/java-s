@@ -1,0 +1,43 @@
+proje dosyası oluştur
+git bash kullanarak o dizine git
+git init  komutunu çalıştır.  .git oluşacak
+
+dosyalarını oluştur git e yüklemek için ;
+
+git init
+git .  veya git add xx.py   staged area ya gönderir -- araf gibi düşün
+git commit -m " ilk commit"  staged area dan repo ya gönderim.
+git log --  yapılan tüm get ler
+git status  -- sunucudaki klasör ile repo daki varsa farkları söyler
+git diff -- bir file da değişiklik yapıldı ise repodaki file ile farkını gösterir
+git diff --staged ise local file ile staged are da bulunan file arasındaki farkı gösterir
+git rm
+git rm -r 
+git mv
+
+yukardaki 3 komutu da çalıştırdıktan sonra gene her zamanki gibi git add . ve git commit -m "xxx"
+
+git checkout -- dosyaadı dediğimiz de local de yanlışlıkla sildiğimiz yada hatalı işlem yaptığımız dosyayı repo dakini kullanarak düzeltiyoruz.
+
+git reset HEAD dosyaadi  ( (use "git rm --cached <file>..." to unstage)) dediğimizde staged e yollanan halini iptal etmiş oluyoruz gerekiyor ise checkout ile repo dakini local e eşleştiririz
+
+git checkout hashcode -- .   (. projedeki tüm dosyaları belirtilen versiyon  ye çeker, nokta yerine bir dosya adı verilir ise sadece o dosyayı çeker
+
+
+git remote add githubRepo https://github.com/serbayc/java-s.git  Proje dosyası içindeyken çalıştır
+git remote    kontrol edilir
+git push -u githubRepo master    tüm dosyaları gönderir
+.ignore içine yazılanlar github a yollanmaz. dosya içine klasör adı girilebilir örn : klasor/* gibi. ilgili klasörde sadece 1 dosyannın 
+gönderilmesine izin var ise dosya adı başına ! koyarak exclude edilir.
+
+git pull diyerek github üzerinde yapılan değişiklikler local e çekilir.
+git branch mevcut dalları gösterir. uzak bilgisayardaki için --all eklenir
+git branch yandal2 yeni dal oluşturulur (master bir daldır)
+git checkout master ile master dalına geçiş yapılır
+git diff master yandal2 ile iki dal arasındaki farklara bakılır.
+git checkout master ile master dalı seçili iken  git merge yandal2 denir ise iki dal birleştirilmiş olur yani yandal2 deki
+dosya master dalı altına gelmiş olur sonra git push ile github ile eşlenir.
+Readme.md syntax https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax
+
+Github sayfasında "watch" ilgili sayfayı takip edip değişiklikleri bildirim almak.
+Star hem beğenmiş olmak hemde bookmark , Fork ise projenin bir kopyasını kendi github sayfanıza kopyalamak.
