@@ -41,3 +41,5 @@ Readme.md syntax https://help.github.com/en/github/writing-on-github/basic-writi
 
 Github sayfasında "watch" ilgili sayfayı takip edip değişiklikleri bildirim almak.
 Star hem beğenmiş olmak hemde bookmark , Fork ise projenin bir kopyasını kendi github sayfanıza kopyalamak.
+github issue dan yardım kaydı oluşturup diğer programcılardan destek alınabilir 
+Türkçe programlama kaynakları https://github.com/fatihacet/turkcekaynaklar-com
